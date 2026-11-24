@@ -1,0 +1,29 @@
+:root{--deep:#12403c;--mint:#e3f4ec;--sun:#f6c744;--ink:#10201f;--white:#fff;--mute:#4a615e;--line:#c5ddd2}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI","Trebuchet MS",Arial,sans-serif;background:var(--white);color:var(--ink);line-height:1.65}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;align-items:center;padding:1rem 1.5rem;background:var(--deep)}
+nav .brand{font-weight:700;font-size:1.2rem;margin-right:auto;color:var(--white);text-decoration:none}
+nav a{color:#b9d8cf;text-decoration:none;padding:.25rem 0}
+nav a:hover,nav a[aria-current]{color:var(--white)}
+nav a[aria-current]{border-bottom:3px solid var(--sun)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--deep);outline-offset:2px}
+.hero{background:var(--mint);padding:3rem 1.5rem}
+.hero>div,main{max-width:860px;margin:0 auto}
+main{padding:2rem 1.5rem 4rem}
+.hero>div{padding:0}
+h1{font-size:clamp(2.1rem,6.5vw,3.8rem);line-height:1.08;margin:.5rem 0 1rem;max-width:16ch;color:var(--deep)}
+h2{font-size:1.5rem;margin:2.5rem 0 .75rem;color:var(--deep)}
+p{max-width:65ch}
+.lead{font-size:1.2rem;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.box{background:var(--mint);padding:1rem 1.1rem;border-radius:10px}
+.box h3{margin:.1rem 0 .4rem;color:var(--deep)}
+.box p{margin:0;color:var(--mute);font-size:.95rem}
+ol.steps,ul.list{padding-left:1.3rem;max-width:65ch}
+ol.steps li,ul.list li{margin:.6rem 0}
+label{display:block;margin:1rem 0 .3rem;font-weight:600}
+input,select,textarea{width:100%;padding:.65rem;border:2px solid var(--line);border-radius:8px;font:inherit;background:var(--white);color:var(--ink)}
+.btn{display:inline-block;margin-top:1.2rem;padding:.75rem 1.5rem;background:var(--sun);color:var(--ink);border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--deep);color:var(--white)}
+footer{background:var(--deep);padding:1.5rem;text-align:center;color:#b9d8cf;font-size:.9rem}
+@media(prefers-reduced-motion:no-preference){.btn{transition:background .15s,color .15s}}
